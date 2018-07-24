@@ -275,6 +275,12 @@ const StyledIndex = styled(Index)`
         flex: ${ spacing(6) } 0 1;
         opacity: 0.5;
         filter: grayscale(1);
+        transition: filter 0.3s ease-out, opacity 0.3s ease-out;
+
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
     }
 
     .get-in-touch-links-container {
