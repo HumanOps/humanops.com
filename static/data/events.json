@@ -1,0 +1,22 @@
+[
+    {"location": "London", "host": "The Financial Times", "hostLink": "https://www.google.com/maps/place/The+Financial+Ti…f663665a677d0!8m2!3d51.5073169!4d-0.0946951?hl=en", "date": "2016-05-19"},
+    {"location": "San Francisco", "host": "Yelp", "hostLink": "https://www.google.com/maps/place/Yelp/@37.7866881…1f5a341c77b!8m2!3d37.7866839!4d-122.3998832?hl=en", "date": "2016-06-29"},
+    {"location": "Poznan", "host": "Pixel Building", "hostLink": "https://www.google.com/maps/place/Pixel,+Grunwaldz…08834dff3cc66!8m2!3d52.3914255!4d16.8580791?hl=en", "date": "2016-10-05"},
+    {"location": "San Francisco", "host": "Nylas HQ", "hostLink": "https://www.google.com/maps/place/Nylas/@37.777066…6d8d9b32678!8m2!3d37.7770619!4d-122.4123798?hl=en", "date": "2016-10-19"},
+    {"location": "London", "host": "Facebook HQ", "hostLink": "https://www.google.com/maps/place/Facebook+London/…757fbe5e59ea4!8m2!3d51.5257892!4d-0.1400503?hl=en", "date": "2016-11-21"},
+    {"location": "San Francisco", "host": "Pager Duty", "hostLink": "https://www.google.com/maps/place/PagerDuty+Inc./@…ca2e5612b01!8m2!3d37.7717038!4d-122.4026339?hl=en", "date": "2017-01-20"},
+    {"location": "London", "host": "Moo HQ", "hostLink": "https://www.google.com/maps/place/MOO+Print+Ltd/@5…8c65a50796554!8m2!3d51.5202983!4d-0.1055851?hl=en", "date": "2017-02-07"},
+    {"location": "Poznan", "host": "Allegro HQ", "hostLink": "https://www.google.com/maps/place/Pixel,+Grunwaldz…08834dff3cc66!8m2!3d52.3914255!4d16.8580791?hl=en", "date": "2017-02-15"},
+    {"location": "Poznan", "host": "Allegro HQ", "hostLink": "https://www.google.com/maps/place/Pixel,+Grunwaldz…08834dff3cc66!8m2!3d52.3914255!4d16.8580791?hl=en", "date": "2017-03-13"},
+    {"location": "Paris", "host": "D2SI", "hostLink": "https://www.google.com/maps/place/D2SI/@48.8739786…7457edf8cd604e!8m2!3d48.8740779!4d2.3193946?hl=en", "date": "2017-03-23"},
+    {"location": "Munich", "host": "Stylight HQ", "hostLink": "https://www.google.com/maps/place/Stylight/@48.150…66e3edd0a24507b0!8m2!3d48.15055!4d11.547588?hl=en", "date": "2017-03-29"},
+    {"location": "London", "host": "Moo HQ", "hostLink": "https://www.google.com/maps/place/MOO+Print+Ltd/@5…8c65a50796554!8m2!3d51.5202983!4d-0.1055851?hl=en", "date": "2017-04-04"},
+    {"location": "Paris", "host": "D2SI", "hostLink": "https://www.google.com/maps/place/D2SI/@48.8739786…7457edf8cd604e!8m2!3d48.8740779!4d2.3193946?hl=en", "date": "2017-04-12"},
+    {"location": "Bristol", "host": "BaseKit", "hostLink": "https://www.google.com/maps/place/BaseKit/@51.4536…89bdc2634249e!8m2!3d51.4553045!4d-2.5847886?hl=en", "date": "2017-04-19"},
+    {"location": "New York City", "host": "Work-Bench", "hostLink": "https://www.google.co.uk/maps/place/Work-Bench/@40…265a6ac52d92bc!8m2!3d40.737673!4d-73.992925?hl=en", "date": "2017-04-25"},
+    {"location": "Oxford", "host": "Oxford Innovation", "hostLink": "https://www.google.co.uk/maps/place/Oxford+Innovat…62fb3902f83d3!8m2!3d51.7523572!4d-1.2635692?hl=en", "date": "2017-04-25"},
+    {"location": "London", "host": "Salesforce", "hostLink": "https://www.google.com/maps/place/Salesforce/@51.5…6478acbd345d4!8m2!3d51.5163649!4d-0.0809159?hl=en", "date": "2017-07-18"},
+    {"location": "London", "host": "Kobalt Music", "hostLink": "https://www.google.com/maps/place/Kobalt+Music+Group/@51.5101095,-0.0932817,17z/data=!3m1!4b1!4m5!3m4!1s0x48760355d36c0835:0x721be91c270d4988!8m2!3d51.5101095!4d-0.091093", "date": "2018-07-17"},
+    {"location": "San Francisco", "host": "HeavyBit", "hostLink": "https://www.google.com/maps/place/Heavybit,+Inc./@37.7735277,-122.4132888,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e2840f53173:0xbf33e194be5e4cd8!8m2!3d37.7735277!4d-122.4111001", "date": "2018-08-14"}
+]
+
