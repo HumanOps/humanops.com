@@ -1,18 +1,16 @@
 language: node_js
 node_js:
-  - "node"
+- node
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
-
+- npm run build
 before_deploy:
-  - cp ./static_dist/404/index.html ./static_dist/404.html # Move Next-created page to location required by Firebase
-
+- cp ./static_dist/404/index.html ./static_dist/404.html
 deploy:
   on:
     branch: master
   skip_cleanup: true
   provider: firebase
   token:
-    secure: hIhx2ytU5B/EoD2f5Sy8w0+sEGyDMkfVYf0oRpqKb3nFaVU0Gmu3HmpDut0gCmyrdjun4QZIdOwmIyGaFRbogfDE/CHofUaxuj2gpchF5f/+kvtZQUMbunbumBbYrOeSZ/r5O8S4aaimMBc0QPHYvRJILJKSCpa4HMQJmi98wa9EHM9EtkSlxRY5EspyFGnBXRdNsbEMKkJfszyuGWmkS+5Is44UV3LmSiyCS79YuaCkUrkB2LEdK1VYIGfwsnF6ixed2wlTu7vTnDLub4bZpy7Pso9ZHih/sRj9hN0voiiEq2hMAizzEYzUdzQH3XAAI3t/x9aZywgA+VHcZYZzxIogxD5ihf72l393inY4KuNa4pBxdGstXjALEG1q0i/V6bLjjhti2s7ygX3cxRVIorCt3JGHwzu0odZjtN2Djl94zZBc7gWrqn/7HcDT2ON10ToG7nenMUR5+YHdcgJbPhPys+okvPK7UWcxaAL6exp23sR0c5q27a5G63UAhuikbH2mdhUbDa+ThjmH2ROfwgcGBxBgiOu4rWtVXoSAvlbk3cP7BbgGVFTFD8PPe0djjVCKWpnxgY2UI0E4Gb02zOiqgwSxMDCcPtFmiByhyZ7hWZSSICVXCtj/NilcdQqZB5qU9TG+VTXgqs+4HRinmqfmHulzbEMSXeIcXVNnL+k=
+    secure: as4K9e4uz6+V+cVLtaAw/pCfwZoR7EBBf5uPjlkJJjf9qyhziXWyD201HiOeZ1XE+btyr9cYu2y7efjVcTwXrSP5TMCzwyMhoFyya2ErJVWesY4YYRB7eVdsfFzg2bM7tJmX5cThuL7uWodNblaQwsDXU81IrbMw4Cw9CTslr9cibMc1WHgcx8pjFzmHH5EpUkiBUbpozLDSx3WnN4M02XV9BPSsqUoRFe9VORPpOXY58wbj6nVLORjZnCuln+GskBl+vRIk4Ib4OnxRxmzqKG0DRdlA0PpQ/+rm4vdjbbpYEWTsJKObN12fAnsd27PWHfml4kWBVM2Ud5LnUbrNaLQCGe0tU8eOxRl6gqrihf6PTcwK1da3Us6XdWn2Q98ioT9IRPZ9U+bJMPCtWG0LhpB1ifYYis+LI4uoGK1jyMlrDX8utH0rY5BfHaJHpAGlB3l1uGDnCLllFcQZTS0JymE03q1bvreP7QZVGj+XQWG6V8mvaOj6Y+UJS4OWU2PjlZOJ0K2HAFV8Jcz4qje40kjaww5GoG+KCLoev4mWVOOpc1F+JO4GGvkpvcT5wGdKZmTC4ImfGq91QLRX4H9+eUCIr0k6WTOvYuDgArFP/12d3tXvC9MUfeRLNwKpxOwHGYZAm4df4sh6kZ5dKY+bjykdYxJ1a2djAVkUfitzric=
