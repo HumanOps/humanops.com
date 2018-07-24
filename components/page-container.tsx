@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 import { Typography } from '../design-system/tokens'
 
-import { spacing } from '../design-system/utilities/layout'
-
 import Header from './header'
 import Footer from './footer'
 
@@ -45,10 +43,6 @@ const StyledPageContainer = styled(PageContainer)`
         left: 0;
         right: 0;
         z-index: 2;
-    }
-
-    .content-container {
-        padding-bottom: ${ spacing(10) };
     }
 `
 
