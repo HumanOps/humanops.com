@@ -5,8 +5,7 @@ install:
 - npm install
 script:
 - npm run build
-before_deploy:
-- cp ./static_dist/404/index.html ./static_dist/404.html
+
 deploy:
   on:
     branch: master
