@@ -1,3 +1,5 @@
 .next
-.swp
 node_modules/
+static_dist/
+
+.sw*
