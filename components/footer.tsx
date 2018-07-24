@@ -24,7 +24,7 @@ const StyledFooter = styled(Footer)`
     background: ${ Color.brand('primary') };
 
     .logo-container {
-        width: ${ spacing(5) };
+        width: ${ spacing(6) };
         margin: ${ spacing(6) } auto ${ spacing(10) };
     }
 `
