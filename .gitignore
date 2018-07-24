@@ -1,5 +1,6 @@
 .next
 node_modules/
 static_dist/
+todo.txt
 
 .sw*
