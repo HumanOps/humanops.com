@@ -1,13 +1,13 @@
 {
-    "name": "humanopsv2",
+    "name": "humanops",
     "version": "1.0.0",
-    "description": "",
+    "description": "The HumanOps website",
     "main": "index.js",
     "types": "types.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "next",
-        "build": "next build",
+        "build": "next build && next export -o static_dist",
         "start": "next start"
     },
     "keywords": [],
