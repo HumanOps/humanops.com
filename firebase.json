@@ -1,0 +1,11 @@
+{
+    "hosting": {
+        "public": "static_dist",
+        "ignore": [
+            "node_modules/",
+            "LICENSE",
+            "package.json",
+            "README.md"
+        ]
+    }
+}
