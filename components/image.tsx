@@ -15,6 +15,7 @@ const Image: React.StatelessComponent<ImageProps> = (props) => (
 )
 
 const StyledImage = styled(Image)`
+    width: 100%;
 `
 
 export default StyledImage

@@ -21,6 +21,7 @@ import HumanOpsLogo from '../components/humanops-logo2'
 import Link from '../components/link'
 import Mantras from '../components/mantras'
 import Mantra from '../components/mantra'
+import Image from '../components/image'
 
 import eventsJSON from '../static/data/events.json'
 
@@ -170,8 +171,23 @@ const Index = (props) => (
             <Section name="a-movement" backgroundTheme="light">
                 <SectionHeading backgroundTheme="light">A Movement</SectionHeading>
                 <SectionIntroduction>
-                    Join a growing list of amazing organizations embracing HumanOps
+                    Join a growing list of organizations embracing HumanOps
                 </SectionIntroduction>
+
+                <div className='a-movement-organization-logos-container'>
+                    <div className='org-logo-container'>
+                        <Image source='/static/images/facebook-logo-iconmark.svg' title='Facebook' alt='Facebook' />
+                    </div>
+                    <div className='org-logo-container'>
+                        <Image source='/static/images/yelp-logo-iconmark.svg' title='Yelp' alt='Yelp' />
+                    </div>
+                    <div className='org-logo-container'>
+                        <Image source='/static/images/financial-times-logo-iconmark.svg' title='Financial Times' alt='Financial Times' />
+                    </div>
+                    <div className='org-logo-container'>
+                        <Image source='/static/images/songkick-logo-iconmark.svg' title='Songkick' alt='Songkick' />
+                    </div>
+                </div>
             </Section>
 
             <Section name="get-in-touch" backgroundTheme="light">
@@ -245,6 +261,20 @@ const StyledIndex = styled(Index)`
     .organize-cta-container {
         max-width: ${ spacing(30) };
         margin: 0 auto;
+    }
+    
+    .a-movement-organization-logos-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        max-width: ${ spacing(50) };
+        margin: 0 auto;
+    }
+
+    .org-logo-container {
+        flex: ${ spacing(6) } 0 1;
+        opacity: 0.5;
+        filter: grayscale(1);
     }
 
     .get-in-touch-links-container {
