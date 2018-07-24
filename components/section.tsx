@@ -8,8 +8,6 @@ import * as Color from '../design-system/utilities/color'
 import { BaseElementProps, ElementWrapper, Themable } from '../types/element'
 import { BackgroundTheme } from '../types/color'
 
-import { assertUnreachable } from '../utilities/errors'
-
 interface SectionProps extends BaseElementProps, ElementWrapper, Themable {
     id?: string;
     name: string;
@@ -49,10 +47,9 @@ function getBackgroundColorForBackgroundTheme(
             return Color.neutral('darkest')
         case 'light':
             return Color.neutral('lightest')
-        default:
-            //return assertUnreachable(backgroundTheme)
-            return 'transparent'
     }
+
+    return 'transparent'
 }
 
 const StyledSection = styled(Section)`

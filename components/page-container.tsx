@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { Typography } from '../design-system/tokens'
 
 import { spacing } from '../design-system/utilities/layout'
-import * as Color from '../design-system/utilities/color'
 
 import Header from './header'
 import Footer from './footer'
