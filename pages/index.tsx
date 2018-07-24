@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import styled from 'styled-components'
-import Particles from 'react-particles-js'
+//import Particles from 'react-particles-js'
 
 import { ContactLink } from '../constants'
 
@@ -31,33 +31,36 @@ import {
     getEventID
 } from '../utilities/events'
 
-const particlesConfig = {
-    particles: {
-        line_linked: {
-            enable: false
-        },
-        size: {
-            "value": 6,
-            "random": true,
-            "anim": {
-                "enable": true,
-                "speed": 2
-            }
-        },
-        "opacity": {
-            "random": true,
-            "value": 0.2,
-            "anim": {
-                "enable": true,
-                "speed": 0.5
-            }
-        },
-        "move": {
-            "out_mode": "out",
-            "speed": 2
-        }
-    }
-}
+//const particlesConfig = {
+//    particles: {
+//        "number": {
+//            "value": 1
+//        },
+//        line_linked: {
+//            enable: false
+//        },
+//        size: {
+//            "value": 100,
+//            "random": true,
+//            "anim": {
+//                "enable": false,
+//                "speed": 2
+//            }
+//        },
+//        "opacity": {
+//            "random": true,
+//            "value": 0.2,
+//            "anim": {
+//                "enable": false,
+//                "speed": 0.5
+//            }
+//        },
+//        "move": {
+//            "out_mode": "out",
+//            "speed": 2
+//        }
+//    }
+//}
 
 const Index = (props) => (
     <PageContainer title="HumanOps" className={ classNames('page--index', props.className) }>
@@ -68,6 +71,11 @@ const Index = (props) => (
 
             <HeroSubtitle color='white'>Focusing on the human side of running infrastructure</HeroSubtitle>
     
+            {/*
+            <div className='hero-particles-container'>
+                <Particles params={ particlesConfig } className='particles' canvasClassName='particles' />
+            </div>
+              */}
         </Section>
 
     <div className='responsive-row-container'>
@@ -182,8 +190,6 @@ const Index = (props) => (
                 </div>
             </Section>
         </div>
-
-            <div className='hero-particles-container'> <Particles params={ particlesConfig } className='particles' canvasClassName='particles' /> </div>
     </PageContainer>
 )
 
@@ -196,14 +202,12 @@ const StyledIndex = styled(Index)`
     .hero-particles-container,
     .particles {
         pointer-events: none;
-        position: fixed;
+        position: absolute;
         z-index: 0;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        height: 100vh;
-        width: 100vw;
     }
 
     .hero-logo-container {
