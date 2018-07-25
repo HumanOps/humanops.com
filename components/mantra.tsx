@@ -17,7 +17,7 @@ export interface MantraProps extends BaseElementProps, StringWrapper {
 const Mantra: React.StatelessComponent<MantraProps> = (props) => (
     <div className={ classNames('mantra', props.className) }>
     { props.number && <div className='number-container'>
-        <Text inline color={ Color.lightest }>{ props.number }</Text>
+        <Text inline weight='bold' color={ Color.lightest }>{ props.number }</Text>
     </div> }
 
         <div className='description-container'>

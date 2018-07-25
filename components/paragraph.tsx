@@ -24,9 +24,9 @@ function getColorForBackgroundTheme(theme: BackgroundTheme): string {
         case 'brand':
             return Color.neutral('lightest')
         case 'dark':
-            return Color.neutral('mid-light')
+            return Color.neutral('light')
         case 'light':
-            return Color.neutral('mid')
+            return Color.neutral('mid-dark')
     }
 
     return assertUnreachable(theme)

@@ -18,8 +18,8 @@ export class Typography {
 export class Color {
     static readonly brand: BrandColorMap = {
         'primary': '#79BD9A',
-        'cta': '#BD799C',
-        'cta-hover': '#CE8AAD'
+        'cta': '#bb5188',
+        'cta-hover': '#bb5188'
     }
 
     static readonly gradient: GradientMap = {
@@ -29,8 +29,8 @@ export class Color {
             'angle': 90
         },
         'cta': {
-            'start': '#BD799C',
-            'end': '#CE8AAD',
+            'start': '#bb5188',
+            'end': '#dd73aa',
             'angle': 0
         }
     }
@@ -39,8 +39,8 @@ export class Color {
         'lightest':     '#fff',
         'light':        '#ddd',
         'mid-light':    '#bbb',
-        'mid':          '#999',
-        'mid-dark':     '#666',
+        'mid':          '#767676',
+        'mid-dark':     '#555',
         'dark':         '#333',
         'darkest':      '#18173A'
     }
