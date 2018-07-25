@@ -55,7 +55,7 @@ const EventLocation: React.StatelessComponent<EventLocationProps> = (props) => {
 
 const StyledEventLocation = styled(EventLocation)`
     padding: ${ spacing(3) } 0 ${ props => spacing(3, { adjustByPx: (props.last ? 0 : -1) }) } 0;
-    border-bottom: ${ props => props.last ? 'none' : `1px solid ${ Color.neutral('light') }` };
+    border-bottom: 1px solid ${ Color.neutral('light') };
 
     .event-location-name {
         display: flex;
