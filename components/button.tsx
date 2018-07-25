@@ -31,7 +31,7 @@ function renderElementForType(type: ButtonType, props: ButtonProps): JSX.Element
 
         case 'link':
             return (
-                <Link hover={ false } {...props } className={ classNames('button', 'button--link', props.className) }>
+                <Link hover={ false } {...props } className={ classNames('button', 'button--link', props.className) } color={ Color.lightest }>
                     <Text weight='bold' align='center'>{ props.children }</Text>
                 </Link>
             )
