@@ -58,6 +58,13 @@ export default class HumanOpsDocument extends Document {
                     <NextScript />
 
                     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+                    <script dangerouslySetInnerHTML={{__html: `
+                        WebFont.load({
+                            google: {
+                                families: ['Nunito:300,400,700']
+                            }
+                        })
+                    ` }} />
                 </body>
             </html>
         )
