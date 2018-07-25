@@ -40,7 +40,7 @@ function wrapString(str: string, props: TextProps): JSX.Element {
 const CustomLink: React.StatelessComponent<LinkProps> = (props) => {
     return (
     <Link href={ props.href }>
-        <a className={ classNames('link', props.className) } title={ props.title } target={ getTarget(props.external || false) }>
+        <a className={ classNames('link', props.className) } title={ props.title } target={ getTarget(props.external || false) } rel={ props.external ? 'noopener' : undefined }>
             { typeof props.children == 'string' ? wrapString(props.children, props) : props.children }
         </a>
     </Link>
