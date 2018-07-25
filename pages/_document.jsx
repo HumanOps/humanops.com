@@ -34,11 +34,6 @@ export default class HumanOpsDocument extends Document {
 
                     {this.props.styleTags}
 
-                    <link
-                        href="https://fonts.googleapis.com/css?family=Nunito:300,400,700"
-                        rel="stylesheet"
-                    />
-
                     <style dangerouslySetInnerHTML={{__html: `
                         * {
                             box-sizing: border-box;
@@ -61,6 +56,8 @@ export default class HumanOpsDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
                 </body>
             </html>
         )
