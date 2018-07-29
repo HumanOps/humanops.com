@@ -40,7 +40,7 @@ export default class HumanOpsDocument extends Document {
                     <meta property="og:description" content="HumanOps is a set of principles which focus on the human aspects of running infrastructure. The health of your infrastructure is not just about hardware, software, automations and uptime - it also includes the health and wellbeing of your team." />
                     <meta property="og:url" content="http://www.humanops.com/" />
                     <meta property="og:site_name" content="HumanOps" />
-                    <meta property="og:image" content="/assets/images/humanops-banner.png" />
+                    <meta property="og:image" content="/static/images/humanops-banner.png" />
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:site" content="@humanops" />
                     <meta name="twitter:creator" content="@humanops" />
