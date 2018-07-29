@@ -8,17 +8,18 @@ import * as Color from '../design-system/utilities/color'
 import { BaseElementProps } from '../types/element'
 
 import Text from './text'
-import Link from './link'
+import Link, { LinkProps } from './link'
 import LocationIcon from './location-icon'
 import CalendarIcon from './calendar-icon'
 
 export interface EventProps extends BaseElementProps {
     date: string;
     host: string;
+    detailsLink?: string;
     hostLink?: string;
 }
 
-function wrapWithLink(text, href) {
+function wrapWithLink(text: string, href: string): React.ReactElement<LinkProps> {
     return (
         <Link href={ href } external>{ text }</Link>
     )
@@ -31,7 +32,7 @@ const Event: React.StatelessComponent<EventProps> = (props) => (
                 <CalendarIcon color={ Color.neutral('light') } />
             </div>
 
-            <Text color={ Color.neutral('dark') }>{ props.date }</Text>
+            { props.detailsLink ? wrapWithLink(props.date, props.detailsLink) : <Text color={ Color.neutral('dark') }>{ props.date }</Text> }
         </div>
 
         <div className='location-container'>

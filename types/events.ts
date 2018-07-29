@@ -6,4 +6,5 @@ export interface Event {
     date: string;
     host: string;
     hostLink?: string;
+    detailsLink?: string;
 }

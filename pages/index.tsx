@@ -63,6 +63,7 @@ import {
 //    }
 //}
 
+
 const Index = (props) => (
     <PageContainer title="HumanOps" className={ classNames('page--index', props.className) }>
         <Section name='hero' id='hero'>
@@ -148,6 +149,7 @@ const Index = (props) => (
                                         date={event.date}
                                         host={event.host}
                                         hostLink={event.hostLink}
+                                        detailsLink={event.detailsLink}
                                     />
                                 ))}
                             </EventLocation>
