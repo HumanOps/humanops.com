@@ -21,7 +21,7 @@ const Mantra: React.StatelessComponent<MantraProps> = (props) => (
     </div> }
 
         <div className='description-container'>
-            <Text scale={2} color={ Color.neutral('dark') } inline>{ props.children }</Text>
+            <Text scale={1} color={ Color.neutral('dark') } inline>{ props.children }</Text>
         </div>
     </div>
 )
