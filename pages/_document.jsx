@@ -66,8 +66,19 @@ export default class HumanOpsDocument extends Document {
 
     html {
         position: relative;
-    font-size: ${ Typography.baseFontSize }px;
-    background: ${ Color.brand('primary') };
+
+        font-size: ${ Typography.baseFontSize }px;
+
+        /* For fluid typography (https://www.smashingmagazine.com/2016/05/fluid-typography/) */
+        font-size: calc(1em + 0.8vw);
+
+        background: ${ Color.brand('primary') };
+    }
+
+    @media screen and (min-width: 75em) {
+        html {
+            font-size: 1.5em;
+        }
     }
 
     ::selection {

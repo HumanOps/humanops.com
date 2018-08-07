@@ -66,7 +66,7 @@ import {
 
 const Index = (props) => (
     <PageContainer title="HumanOps" className={ classNames('page--index', props.className) }>
-        <Section name='hero' id='hero'>
+        <Section name='hero' id='hero' backgroundTheme='brand'>
             <div className='hero-logo-container'>
                 <HumanOpsLogo />
             </div>
@@ -213,7 +213,6 @@ const Index = (props) => (
 
 const StyledIndex = styled(Index)`
     .section--hero {
-        min-height: 60vh;
         position: relative;
     }
 
@@ -251,12 +250,12 @@ const StyledIndex = styled(Index)`
     }
 
     .mantras-container {
-        max-width: 36em;
+        max-width: 38em;
         margin: 0 auto;
     }
 
     .events-container {
-        max-width: 1200px;
+        max-width: ${ spacing(170) };
         margin: 0 auto;
     }
 
@@ -302,7 +301,7 @@ const StyledIndex = styled(Index)`
         flex-flow: row wrap;
 
         & > * {
-            flex: 1 0 ${ spacing(45) };
+            flex: 1 1 ${ spacing(45) };
         }
     }
 `

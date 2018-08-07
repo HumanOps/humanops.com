@@ -14,9 +14,9 @@ const HeroSubtitle: React.StatelessComponent<HeroSubtitleProps> = (props) => (
 )
 
 const StyledHeroSubtitle = styled(HeroSubtitle)`
-    margin-bottom: ${ spacing(4) };
     max-width: 26em;
     margin: 0 auto;
+    margin-bottom: ${ spacing(8) };
 `
 
 export default StyledHeroSubtitle

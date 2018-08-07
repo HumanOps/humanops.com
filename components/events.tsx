@@ -34,9 +34,8 @@ const Events: React.StatelessComponent<EventsProps> = (props) => (
 
 const StyledEvents = styled(Events)`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(${ spacing(35) }, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(${ spacing(32) }, 1fr));
     grid-column-gap: ${ spacing(8) };
-    grid-auto-flow: dense;
 `
 
 export default StyledEvents
