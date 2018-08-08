@@ -42,7 +42,7 @@ function getBackgroundColorForBackgroundTheme(
 ): string {
     switch (backgroundTheme) {
         case 'brand':
-            return Color.brand('primary')
+            return Color.gradient('primary', 180)
         case 'dark':
             return Color.neutral('darkest')
         case 'light':
