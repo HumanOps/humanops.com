@@ -37,6 +37,7 @@ const StyledPageContainer = styled(PageContainer)`
     position: relative;
     min-width: 300px;
     font-family: ${ Typography.fontStack };
+    background: white;
 
     .header-container {
         position: absolute;
@@ -47,7 +48,6 @@ const StyledPageContainer = styled(PageContainer)`
     }
 
     .content-container {
-        background: white;
         padding-bottom: ${ spacing(10) };
     }
 `
