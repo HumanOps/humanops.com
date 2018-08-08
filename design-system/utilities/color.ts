@@ -6,10 +6,10 @@ export function brand(key: BrandColorKey): string {
     return Color.brand[key]
 }
 
-export function gradient(key: GradientKey): string {
+export function gradient(key: GradientKey, angle?: number): string {
     const options = Color.gradient[key]
 
-    return `linear-gradient(${ options.angle || 0}deg, ${ options.start }, ${ options.end })`
+    return `linear-gradient(${ angle || options.angle || 0}deg, ${ options.start }, ${ options.end })`
 }
 
 // Neutrals
