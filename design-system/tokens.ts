@@ -17,7 +17,7 @@ export class Typography {
 // Color
 export class Color {
     static readonly brand: BrandColorMap = {
-        'primary': '#79BD9A',
+        'primary': '#83D0A0',
         'cta': '#bb5188',
         'cta-hover': '#bb5188'
     }
@@ -25,7 +25,7 @@ export class Color {
     static readonly gradient: GradientMap = {
         'primary': {
             'start': '#83D0A0',
-            'end': '#D7E2AA',
+            'end': '#6ac1c5',
             'angle': 90
         },
         'cta': {
