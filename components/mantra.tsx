@@ -16,32 +16,47 @@ export interface MantraProps extends BaseElementProps, StringWrapper {
 
 const Mantra: React.StatelessComponent<MantraProps> = (props) => (
     <div className={ classNames('mantra', props.className) }>
-    { props.number && <div className='number-container'>
+    { props.number && <div className='mantra-number-container'>
         <Text inline weight='bold' color={ Color.lightest }>{ props.number }</Text>
     </div> }
 
-        <div className='description-container'>
+        <div className='mantra-description-container'>
             <Text scale={1} color={ Color.neutral('dark') } inline>{ props.children }</Text>
         </div>
     </div>
 )
 
 const StyledMantra = styled(Mantra)`
-    padding: ${ spacing(2) };
+    padding: ${ spacing(3) } ${ spacing(0) };
     display: flex;
-    flex-flow: row no-wrap;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-    .number-container {
-        margin-right: ${ spacing(2) };
+    @media screen and (min-width: ${ spacing(75) }) {
+        flex-flow: row nowrap;
+        text-align: left;
+        align-items: baseline;
+    }
+
+    .mantra-number-container {
+        margin-bottom: ${ spacing(2) };
+        padding: ${ spacing(2) };
+
         display: flex;
         justify-content: center;
         align-items: center;
+
         height: 40px;
         width: 40px;
-        border-radius: 40px;
-        padding: ${ spacing(2) };
+
+        border-radius: 50%;
+
         background: ${ Color.brand('primary') };
+    }
+
+    .mantra-description-container {
+        margin: 0 ${ spacing(2) };
     }
 `
 
