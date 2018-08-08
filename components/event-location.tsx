@@ -68,10 +68,17 @@ const StyledEventLocation = styled(EventLocation)`
     }
 
     .location-previous-events-container {
-        border-left: 1px solid ${ Color.neutral('light') };
-        padding-left: ${ spacing(1) };
-        padding-top: ${ spacing(1) };
-        margin-left: ${ spacing(1) };
+        display: none;
+    }
+
+    @media screen and (min-width: ${ spacing(47) }) {
+        .location-previous-events-container {
+            display: block;
+            border-left: 1px solid ${ Color.neutral('light') };
+            padding-left: ${ spacing(1) };
+            padding-top: ${ spacing(1) };
+            margin-left: ${ spacing(1) };
+        }
     }
 `
 
