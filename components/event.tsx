@@ -47,14 +47,20 @@ const Event: React.StatelessComponent<EventProps> = (props) => (
 
 const StyledEvent = styled(Event)`
     display: flex;
-    justify-content: space-between;
-    padding: ${ spacing(.5) } 0;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: ${ spacing(.5) } 0 0;
 
     .location-container,
     .date-container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: baseline;
+        margin-bottom: ${ spacing(.5) };
+    }
+
+    .date-container {
+        flex: ${ spacing(16) } 1 0;
     }
 
     .date-icon-container,
