@@ -49,7 +49,21 @@ const StyledEvent = styled(Event)`
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    padding: ${ spacing(.5) } 0 0;
+    padding: ${ spacing(1) } 0 0 ${ spacing(2) };
+    margin-bottom: ${ spacing(1) };
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        border-radius: 4px;
+        background: ${ Color.gradient('primary', 180) };
+    }
 
     .location-container,
     .date-container {
