@@ -70,14 +70,14 @@ export default class HumanOpsDocument extends Document {
         font-size: ${ Typography.baseFontSize }px;
 
         /* For fluid typography (https://www.smashingmagazine.com/2016/05/fluid-typography/) */
-        font-size: calc(1em + 0.8vw);
+        font-size: calc(1em + 0.6vw);
 
         background: ${ Color.brand('primary') };
     }
 
-    @media screen and (min-width: 75em) {
+    @media screen and (min-width: 65em) {
         html {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
 
