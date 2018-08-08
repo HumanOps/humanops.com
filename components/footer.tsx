@@ -21,6 +21,7 @@ const Footer: React.StatelessComponent<FooterProps> = (props) => (
 )
 
 const StyledFooter = styled(Footer)`
+    padding: ${ spacing(4) };
     background: ${ Color.brand('primary') };
 
     .logo-container {
