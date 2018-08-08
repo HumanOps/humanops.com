@@ -237,10 +237,7 @@ const StyledIndex = styled(Index)`
     }
 
     .the-problem-description-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(${ spacing(30) }, 1fr));
-        grid-column-gap: ${ spacing(4) };
-        max-width: 50em;
+        max-width: 40em;
         margin: 0 auto;
     }
 
@@ -250,7 +247,7 @@ const StyledIndex = styled(Index)`
     }
 
     .mantras-container {
-        max-width: 38em;
+        max-width: 36em;
         margin: 0 auto;
     }
 
@@ -260,20 +257,27 @@ const StyledIndex = styled(Index)`
     }
 
     .organize-cta-container {
-        max-width: ${ spacing(30) };
+        max-width: ${ spacing(20) };
         margin: 0 auto;
     }
     
     .a-movement-organization-logos-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        max-width: ${ spacing(50) };
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: ${ spacing(2) };
+        place-items: center;
+    }
+
+    @media screen and (min-width: ${ spacing(56) }) {
+        .a-movement-organization-logos-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .org-logo-container {
-        flex: ${ spacing(6) } 0 1;
+        max-width: ${ spacing(8) }; 
+        padding: ${ spacing(0.5) };
+
         opacity: 0.5;
         filter: grayscale(1);
         transition: filter 0.3s ease-out, opacity 0.3s ease-out;
@@ -297,6 +301,9 @@ const StyledIndex = styled(Index)`
     }
 
     .responsive-row-container {
+        max-width: ${ spacing(200) };
+        margin: 0 auto;
+
         display: flex;
         flex-flow: row wrap;
 
