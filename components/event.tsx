@@ -19,9 +19,9 @@ export interface EventProps extends BaseElementProps {
     hostLink?: string;
 }
 
-function wrapWithLink(text: string, href: string): React.ReactElement<LinkProps> {
+function wrapWithLink(text: string, href: string, title: string): React.ReactElement<LinkProps> {
     return (
-        <Link href={ href } external>{ text }</Link>
+        <Link href={ href } external title={ title }>{ text }</Link>
     )
 }
 
@@ -32,7 +32,7 @@ const Event: React.StatelessComponent<EventProps> = (props) => (
                 <CalendarIcon color={ Color.neutral('light') } />
             </div>
 
-            { props.detailsLink ? wrapWithLink(props.date, props.detailsLink) : <Text color={ Color.neutral('dark') }>{ props.date }</Text> }
+            { props.detailsLink ? wrapWithLink(props.date, props.detailsLink, 'View event details') : <Text color={ Color.neutral('dark') }>{ props.date }</Text> }
         </div>
 
         <div className='location-container'>
@@ -40,7 +40,7 @@ const Event: React.StatelessComponent<EventProps> = (props) => (
                 <LocationIcon color={ Color.neutral('light') } />
             </div>
 
-            { props.hostLink ? wrapWithLink(props.host, props.hostLink) : <Text color={ Color.neutral('mid-dark') }>{ props.host }</Text> }
+            { props.hostLink ? wrapWithLink(props.host, props.hostLink, 'View host details') : <Text color={ Color.neutral('mid-dark') }>{ props.host }</Text> }
         </div>
     </div>
 )
