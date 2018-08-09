@@ -17,6 +17,6 @@
     {"location": "Oxford", "host": "Oxford Innovation", "hostLink": "https://www.google.co.uk/maps/place/Oxford+Innovat…62fb3902f83d3!8m2!3d51.7523572!4d-1.2635692?hl=en", "date": "2017-04-25"},
     {"location": "London", "host": "Salesforce", "hostLink": "https://www.google.com/maps/place/Salesforce/@51.5…6478acbd345d4!8m2!3d51.5163649!4d-0.0809159?hl=en", "date": "2017-07-18"},
     {"location": "London", "host": "Kobalt Music", "hostLink": "https://www.google.com/maps/place/Kobalt+Music+Group/@51.5101095,-0.0932817,17z/data=!3m1!4b1!4m5!3m4!1s0x48760355d36c0835:0x721be91c270d4988!8m2!3d51.5101095!4d-0.091093", "date": "2018-07-17"},
-    {"location": "San Francisco", "host": "HeavyBit", "hostLink": "https://www.google.com/maps/place/Heavybit,+Inc./@37.7735277,-122.4132888,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e2840f53173:0xbf33e194be5e4cd8!8m2!3d37.7735277!4d-122.4111001", "date": "2018-08-14"}
+    {"location": "San Francisco", "detailsLink": "https://www.meetup.com/HumanOps-SanFrancisco/events/253351893/", "host": "Heavybit", "hostLink": "https://www.google.com/maps/place/Heavybit,+Inc./@37.7735277,-122.4132888,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e2840f53173:0xbf33e194be5e4cd8!8m2!3d37.7735277!4d-122.4111001", "date": "2018-08-14"}
 ]
 
