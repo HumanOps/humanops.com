@@ -72,7 +72,7 @@ const Index = (props) => (
             </div>
 
             <HeroSubtitle color='white'>Focusing on the human side of running infrastructure</HeroSubtitle>
-    
+
             {/*
             <div className='hero-particles-container'>
                 <Particles params={ particlesConfig } className='particles' canvasClassName='particles' />
@@ -114,7 +114,7 @@ const Index = (props) => (
 
         <Section name="mantra" backgroundTheme="light">
             <SectionHeading backgroundTheme="light">Mantra</SectionHeading>
-            
+
             <div className='mantras-container'>
                 <Mantras>
                     <Mantra>Humans build systems</Mantra>
@@ -260,7 +260,7 @@ const StyledIndex = styled(Index)`
         max-width: ${ spacing(20) };
         margin: 0 auto;
     }
-    
+
     .a-movement-organization-logos-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -275,7 +275,7 @@ const StyledIndex = styled(Index)`
     }
 
     .org-logo-container {
-        max-width: ${ spacing(8) }; 
+        max-width: ${ spacing(8) };
         padding: ${ spacing(0.5) };
 
         opacity: 0.5;
