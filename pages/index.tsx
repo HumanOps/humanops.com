@@ -84,13 +84,13 @@ const Index = (props) => (
         <Section name="the-problem" backgroundTheme="dark">
             <SectionHeading backgroundTheme="dark">The Problem</SectionHeading>
             <SectionIntroduction backgroundTheme='dark'>
-                Too many alerts &amp; interrupted sleep hurts happiness
+                Overwork &amp; constant call-outs damage health &amp; lead to burnout
             </SectionIntroduction>
 
             <div className='the-problem-description-container'>
                 <Paragraph last backgroundTheme="dark">
-                    A superhero culture exists and unreasonable expectations are
-                    placed on Ops. We want to highlight the importance of the health
+                    A superhero culture exists where unreasonable expectations are
+                    placed on people who operate systems. We highlight the importance
                     of teams running systems, not just the systems themselves.
                 </Paragraph>
             </div>
@@ -99,14 +99,13 @@ const Index = (props) => (
         <Section name="our-aim" backgroundTheme="light">
             <SectionHeading backgroundTheme="light">Our aim</SectionHeading>
             <SectionIntroduction backgroundTheme="light">
-                Ease communication, reduce fatigue &amp; eliminate stress
+                Improve wellbeing. Ease communication, reduce fatigue &amp; reduce stress.
             </SectionIntroduction>
 
             <div className='our-aim-description-container'>
                 <Paragraph backgroundTheme="light">
-                    We&apos;re encouraging the discussion of ideas and best
-                    practices around how to look after the team who look after your
-                    systems.
+                    We encourage the discussion of ideas &amp; best practices around
+                    how to look after the teams who look after your systems.
                 </Paragraph>
             </div>
         </Section>
@@ -117,12 +116,15 @@ const Index = (props) => (
 
             <div className='mantras-container'>
                 <Mantras>
-                    <Mantra>Humans build systems</Mantra>
-                    <Mantra>Humans need downtime. We get tired and stressed, feel happy and sad</Mantra>
-                    <Mantra>Our wellbeing directly impacts system reliability</Mantra>
-                    <Mantra>Our health affects the business health</Mantra>
-                    <Mantra>Document everything, teach everyone, save time</Mantra>
-                    <Mantra>Automate everything. Escalate to a human as a last resort</Mantra>
+                    <Mantra>Humans build systems. Humans are part of systems</Mantra>
+                    <Mantra>Human issues are system issues</Mantra>
+                    <Mantra>Human health is organisation health</Mantra>
+                    <Mantra>Humans need downtime</Mantra>
+                    <Mantra>Document. Share knowledge. Save time</Mantra>
+                    <Mantra>Reduce noise. Only alert when it really matters</Mantra>
+                    <Mantra>Automate. Escalate to a human as a last resort</Mantra>
+                    <Mantra>Learn from incidents with blameless postmortems. Don't repeat them</Mantra>
+                    <Mantra>Improve. Prioritise reliability work</Mantra>
                 </Mantras>
             </div>
         </Section>
